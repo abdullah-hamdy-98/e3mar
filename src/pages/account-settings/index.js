@@ -50,7 +50,7 @@ const AccountSettings = () => {
   }
 
   return (
-    <Card>
+    <Card dir="rtl">
       <TabContext value={value}>
         <TabList
           onChange={handleChange}
@@ -62,7 +62,7 @@ const AccountSettings = () => {
             label={
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <AccountOutline />
-                <TabName>Account</TabName>
+                <TabName>الحساب</TabName>
               </Box>
             }
           />
@@ -71,7 +71,7 @@ const AccountSettings = () => {
             label={
               <Box sx={{ display: 'flex', alignItems: 'center' }}>
                 <LockOpenOutline />
-                <TabName>Security</TabName>
+                <TabName>الأمان</TabName>
               </Box>
             }
           />
@@ -85,7 +85,7 @@ const AccountSettings = () => {
           <TabSecurity />
         </TabPanel>
         <TabPanel sx={{ p: 0 }} value='info'>
-          
+          <TabInfo />
         </TabPanel>
       </TabContext>
     </Card>

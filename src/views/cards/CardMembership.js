@@ -20,11 +20,11 @@ const StyledBox = styled(Box)(({ theme }) => ({
 }));
 
 const CardMembership = () => {
-  
-  const router = useRouter(); 
+
+  const router = useRouter();
 
   const handleEditClick = () => {
-    router.push('/form-layouts'); 
+    router.push('/form-layouts');
   };
 
   return (
@@ -33,7 +33,7 @@ const CardMembership = () => {
         <Grid container spacing={6} >
           <Grid item xs={12} sm={7}>
             <CardContent sx={{ padding: (theme) => `${theme.spacing(7.25, 10.75, 12.25)} !important` }}>
-              <Typography variant="h5" sx={{ marginBottom: 4 , fontWeight :600 }} dir="rtl" >
+              <Typography variant="h5" sx={{ marginBottom: 4, fontWeight: 600 }} dir="rtl" >
                 مشروع البيت الحديث
               </Typography>
               <Divider sx={{ marginTop: 6.5, marginBottom: 6.75 }} />
