@@ -74,7 +74,7 @@ const CardMembership = () => {
                   </Typography>
                   <Typography variant="h6">AM</Typography>
                 </Box>
-                <Typography variant="body1" sx={{ mb: 13.75, display: 'flex', flexDirection: 'column', fontSize: '1rem' }}>
+                <Typography variant="body1" sx={{ mb: 3.75, display: 'flex', flexDirection: 'column', fontSize: '1rem' }}>
                   <span>وقت البدء</span>
                 </Typography>
                 {/* Add onClick handler to the Button */}

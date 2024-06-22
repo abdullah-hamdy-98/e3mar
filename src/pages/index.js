@@ -14,19 +14,17 @@ const Dashboard = () => {
     <ApexChartWrapper>
       <Grid container spacing={3}>
 
-        <Grid item xs={10} md={15}>
+        <Grid item xs={30} md={15}>
           <CardMembership />
         </Grid>
 
-        <Grid item xs={10} md={6}>
+        <Grid item xs={30} md={6}>
           <CardMembership />
         </Grid>
 
-        <Grid item xs={10} md={6}>
+        <Grid item xs={30} md={6}>
           <CardMembership />
         </Grid>
-
-    
 
       </Grid>
     </ApexChartWrapper>

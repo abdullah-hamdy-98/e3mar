@@ -60,15 +60,15 @@ const TabAccount = () => {
   }
 
   return (
-    <CardContent>
+    <CardContent sx={{ direction: 'rtl' }}>
       <form>
         <Grid container spacing={7}>
-          <Grid item xs={12} sx={{ marginTop: 4.8, marginBottom: 3 }}>
-            <Box sx={{ display: 'flex', alignItems: 'center' }}>
+          <Grid item xs={12} sx={{ textAlign: 'center', marginBottom: 3 }}>
+            <Box sx={{ display: 'flex', alignItems: 'center', flexDirection: 'column' }}>
               <ImgStyled src={imgSrc} alt='Profile Pic' />
-              <Box>
-                <ButtonStyled component='label' variant='contained' htmlFor='account-settings-upload-image'>
-                  Upload New Photo
+              <Box sx={{ marginTop: 3, marginRight: 6 }}>
+                <ButtonStyled component='label' variant='contained' htmlFor='account-settings-upload-image' >
+                  رفع صورة ..
                   <input
                     hidden
                     type='file'
@@ -77,30 +77,26 @@ const TabAccount = () => {
                     id='account-settings-upload-image'
                   />
                 </ButtonStyled>
-               
-                <Typography variant='body2' sx={{ marginTop: 5 }}>
-                  Allowed PNG or JPEG. Max size of 2MB.
-                </Typography>
               </Box>
             </Box>
           </Grid>
 
-          <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Name' defaultValue='Abdullah Hamdy' InputProps={{ readOnly: true }}/>
+          <Grid item xs={12} sm={6} sx={{ display: 'flex', alignItems: 'center' }}>
+            <TextField fullWidth label='الإسم' defaultValue='Abdullah Hamdy' InputProps={{ readOnly: true }} sx={{ direction: 'rtl' }} />
           </Grid>
-          <Grid item xs={12} sm={6}>
-            <TextField fullWidth label='Job' defaultValue='Developer' InputProps={{ readOnly: true }}/>
+          <Grid item xs={12} sm={6} sx={{ display: 'flex', alignItems: 'center' }}>
+            <TextField fullWidth label='الوظيفة' defaultValue='Developer' InputProps={{ readOnly: true }} sx={{ direction: 'rtl' }} />
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} sx={{ textAlign: 'left' }}>
             <Button variant='contained' sx={{ marginRight: 3.5 }}>
-              Save
+              حفظ
             </Button>
-
           </Grid>
         </Grid>
       </form>
     </CardContent>
+
   )
 }
 

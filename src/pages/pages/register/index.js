@@ -159,7 +159,7 @@ const RegisterPage = () => {
           </Box>
           <Box sx={{ mb: 6 }}>
             <Typography variant='h5' sx={{ fontWeight: 600, marginBottom: 1.5 }}>
-              Adventure starts here 🚀
+               🚀
             </Typography>
             <Typography variant='body2'>Make your app management easy and fun!</Typography>
           </Box>

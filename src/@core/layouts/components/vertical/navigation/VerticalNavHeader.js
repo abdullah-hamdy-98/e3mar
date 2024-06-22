@@ -2,6 +2,7 @@
 import Link from 'next/link'
 
 // ** MUI Imports
+import Image from 'next/image'
 import Box from '@mui/material/Box'
 import { styled, useTheme } from '@mui/material/styles'
 import Typography from '@mui/material/Typography'
@@ -47,10 +48,7 @@ const VerticalNavHeader = props => {
       ) : (
         <Link href='/' passHref>
           <StyledLink>
-          
-            <HeaderTitle variant='h6' sx={{ ml: 3 }}>
-              {themeConfig.templateName}
-            </HeaderTitle>
+            <Image src={'/images/delta-mix.png'} alt='Logo' width={200} height={40} />
           </StyledLink>
         </Link>
       )}
